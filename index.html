@@ -1,518 +1,2106 @@
 <!doctype html>
 
 <html lang="en">
-
-<head>
-
-<meta charset="utf-8">
-
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-
-<meta name="theme-color" content="#0d0b0a">
-
-<meta name="description" content="You're invited to Sony's Birthday, 24 October 2026 at The Spoke Bistro, Alam Sutera.">
-
-<title>Sony's Birthday | You're Invited</title>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-<style>
-
-:root{--bg:#0e0c0b;--ink:#eee4d3;--gold:#cba46b;--lightgold:#e7c993;--line:rgba(202,162,100,.27);--muted:#b6a99a;--serif:'Cormorant Garamond',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
-
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);overflow-x:hidden;-webkit-font-smoothing:antialiased}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--lightgold);outline-offset:4px}
-
-body::before{content:'';position:fixed;inset:0;z-index:30;pointer-events:none;opacity:.13;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.21'/%3E%3C/svg%3E")}
-
-/**&#x20;Entrance&#x20;**/
-
-.gate{position:fixed;inset:0;z-index:100;display:grid;place-items:center;background:radial-gradient(circle at 50% 30%,#292019 0%,#120f0d 50%,#090807 100%);padding:20px;transition:opacity .8s ease,visibility .8s ease}.gate.hide{opacity:0;visibility:hidden;pointer-events:none}.gate-grid{width:min(100%,970px);min-height:min(650px,90dvh);display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:clamp(20px,5vw,70px)}.gate-art{width:100%;max-width:365px;justify-self:center;transform:rotate(-3deg);filter:drop-shadow(0 30px 45px #0009)}.gate-art img{width:100%;display:block;border-radius:3px;border:1px solid #856537}.gate-content{text-align:left}.overline{color:var(--gold);font-size:10px;font-weight:600;letter-spacing:.37em;text-transform:uppercase;line-height:2}.gate-title{font:500 clamp(64px,8vw,110px)/.82 var(--serif);letter-spacing:-.045em;margin:22px 0 15px}.gate-title em{display:block;color:var(--lightgold);font-weight:400}.gate-content p{color:#c8bbaa;font-size:13px;line-height:1.9;max-width:390px;margin:22px 0 28px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:13px;padding:16px 25px;min-height:49px;border:1px solid var(--gold);background:var(--gold);color:#17110d;letter-spacing:.21em;font-size:10px;font-weight:700;text-transform:uppercase;transition:background .25s,transform .25s,border-color .25s}.btn:hover{background:var(--lightgold);border-color:var(--lightgold);transform:translateY(-2px)}.btn.ghost{background:transparent;color:var(--lightgold)}.btn.ghost:hover{background:rgba(203,164,107,.09)}
-
-/**&#x20;Navigation&#x20;**/
-
-.nav{position:fixed;top:0;left:0;right:0;z-index:20;height:70px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(22px,6vw,90px);background:linear-gradient(#0d0b0ada,#0d0b0a00);transition:background .3s,border-color .3s;border-bottom:1px solid transparent}.nav.scrolled{background:#100e0cec;backdrop-filter:blur(14px);border-color:#cba46b21}.nav-logo{font:500 29px var(--serif);color:var(--lightgold)}.nav-links{display:flex;gap:25px;align-items:center}.nav-links a{font-size:10px;letter-spacing:.21em;text-transform:uppercase;color:#d0bd9f;transition:color .2s}.nav-links a:hover{color:#fff}.nav-links a{border-bottom:1px solid transparent;padding-bottom:5px}.nav-links a.active{border-bottom-color:#cba46b;color:#fff}
-
-/**&#x20;Hero&#x20;**/
-
-.hero{position:relative;min-height:100svh;display:grid;place-items:center;isolation:isolate;padding:110px 24px 90px;overflow:hidden;background:radial-gradient(ellipse at 48% 30%,#302319 0%,#17120f 35%,#0c0a09 75%)}.hero::before{content:'';position:absolute;inset:0;z-index:-2;background:repeating-linear-gradient(150deg,transparent 0 190px,rgba(205,160,92,.04) 191px 193px,transparent 194px 280px);mask-image:linear-gradient(90deg,#000,transparent 60%,#000)}.hero-wrap{width:min(100%,1120px);display:grid;grid-template-columns:.85fr 1fr;gap:clamp(30px,7vw,110px);align-items:center}.hero-copy{max-width:430px}.hero-title{font:500 clamp(78px,11vw,145px)/.76 var(--serif);letter-spacing:-.055em;margin:18px 0 26px}.hero-title em{display:block;font-weight:400;color:var(--lightgold);font-size:.88em}.hero-description{font:400 clamp(17px,2.2vw,22px)/1.45 var(--serif);color:#d9cbb6;max-width:390px}.gold-rule{width:60px;height:1px;background:var(--gold);margin:28px 0}.hero-art{position:relative;width:min(100%,470px);margin:auto}.hero-art::before{content:'';position:absolute;inset:20px -16px -20px 16px;border:1px solid var(--line);transform:rotate(3deg);z-index:-1}.hero-art img{display:block;width:100%;height:auto;box-shadow:0 35px 100px #000b;border:1px solid #90704744;transform:rotate(1deg)}.hero-foot{margin-top:22px;color:#b5a187;font-size:10px;letter-spacing:.24em;text-transform:uppercase}.scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:9px;color:#c8b397;letter-spacing:.27em;text-transform:uppercase;display:flex;align-items:center;gap:14px;animation:breath 2.3s infinite}.scroll::after{content:'↓';font-size:19px}@keyframes breath{50%{opacity:.55}}
-
-/**&#x20;Shared&#x20;**/
-
-section{position:relative;padding:clamp(85px,11vw,155px) 22px}.container{width:min(100%,1060px);margin:auto}.tiny{color:var(--gold);font-size:10px;text-transform:uppercase;letter-spacing:.35em;font-weight:600}.section-heading{font:400 clamp(60px,8.2vw,112px)/.94 var(--serif);letter-spacing:-.045em;margin:18px 0 24px}.section-heading em{color:var(--lightgold);font-weight:400}.bodycopy{font-size:14px;line-height:2;color:#cabfb0}.reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}.reveal.visible{opacity:1;transform:none}
-
-/**&#x20;small, edge-contained visuals only, NEVER a fixed viewport overlay&#x20;**/
-
-.edge-token{position:absolute;pointer-events:none;width:clamp(66px,9vw,118px);aspect-ratio:1;border-radius:50%;background:repeating-conic-gradient(#b89357 0 12deg,#171412 12deg 37deg,#c29e69 37deg 43deg,#171412 43deg 67deg);border:6px solid #16120f;box-shadow:0 17px 30px #0008,inset 0 0 0 3px #aa8959;display:grid;place-items:center;opacity:.6;z-index:0;transition:transform 1.3s cubic-bezier(.2,.7,.2,1),opacity 1.3s}.edge-token::after{content:attr(data-suit);display:grid;place-items:center;background:#191512;border:2px solid #b08d58;width:62%;height:62%;border-radius:50%;font:38px var(--serif);color:#c5a272}.edge-token.from-left{left:-44px;top:22%;transform:translate(-95px,55px) rotate(-70deg)}.edge-token.from-right{right:-48px;bottom:9%;transform:translate(95px,40px) rotate(65deg)}.edge-token.in{transform:translate(0,0) rotate(0deg);opacity:.56}
-
-/**&#x20;Letter section&#x20;**/
-
-.letter{background:#17120f;text-align:center;overflow:hidden}.letter .container{position:relative;z-index:1}.small-suits{color:var(--gold);letter-spacing:.65em;font-size:16px;margin-bottom:28px}.letter p{max-width:570px;margin:0 auto;font:400 clamp(23px,3.1vw,34px)/1.5 var(--serif);color:#ddcbb7}.letter .section-heading{margin-bottom:35px}.letter .divider{width:1px;height:75px;background:linear-gradient(transparent,var(--gold),transparent);margin:38px auto}
-
-/**&#x20;Details&#x20;**/
-
-.details{background:linear-gradient(180deg,#100e0c,#15110e)}.details-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(35px,6vw,90px);align-items:center}.details-card{border:1px solid var(--line);background:linear-gradient(140deg,#211912,#110f0d);padding:clamp(30px,5vw,70px);position:relative;box-shadow:0 20px 60px #0004}.details-card:before,.details-card:after{content:'✦';position:absolute;color:var(--gold);font-size:14px;background:#17120f;padding:8px}.details-card:before{top:-16px;left:50%;transform:translateX(-50%)}.details-card:after{bottom:-16px;left:50%;transform:translateX(-50%)}.detail-row{padding:22px 0;border-bottom:1px solid var(--line)}.detail-row:last-child{border-bottom:0}.detail-label{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}.detail-value{font:400 clamp(27px,4vw,39px)/1.08 var(--serif);color:var(--ink)}.detail-sub{color:var(--muted);font-size:12px;margin-top:9px}.map-link{margin-top:30px}
-
-/**&#x20;Countdown&#x20;**/
-
-.countdown{background:linear-gradient(180deg,#17120f,#120f0d);text-align:center}.countdown-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;max-width:720px;margin:55px auto 0}.clock{border-bottom:1px solid var(--line);padding-bottom:25px}.clock strong{font:400 clamp(55px,9vw,110px)/.9 var(--serif);font-variant-numeric:tabular-nums;color:var(--lightgold);display:block}.clock span{display:block;font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-top:18px}
-
-/**&#x20;RSVP&#x20;**/
-
-.rsvp{background:radial-gradient(ellipse at center 15%,#291c13,#100d0b 70%);text-align:center}.rsvp-panel{border:1px solid var(--line);max-width:740px;margin:auto;padding:clamp(32px,6vw,70px);background:linear-gradient(145deg,#211710bf,#100d0bb8);box-shadow:0 25px 60px #0006;position:relative}.rsvp-panel:before{content:'';position:absolute;inset:10px;border:1px solid #cba46b19;pointer-events:none}.rsvp-panel .section-heading{font-size:clamp(62px,9vw,105px)}.rsvp-desc{color:#cbbca8;font:400 22px/1.55 var(--serif);max-width:480px;margin:0 auto 30px}.rsvp-fields{max-width:440px;margin:0 auto;text-align:left;display:grid;gap:18px}.field label{display:block;color:var(--gold);font-size:10px;letter-spacing:.25em;text-transform:uppercase;margin-bottom:10px}.field input,.field select{width:100%;padding:15px 15px;background:#100d0b;color:#f1e6d4;border:1px solid #775e3f;border-radius:0;outline:none}.field select option{background:#18110d}.choice-hint{font-size:11px;color:#a99986;line-height:1.7}.rsvp-submit{width:100%;margin-top:8px}.rsvp-result{display:none;max-width:440px;margin:28px auto 0;padding:20px;border:1px solid var(--line);color:#e8d4b1;text-align:left;font-size:12px;line-height:1.7}.rsvp-result.show{display:block}.rsvp-result p{white-space:pre-line;margin:0 0 16px}.rsvp-result-actions{display:flex;gap:10px;flex-wrap:wrap}.rsvp-result-actions .btn{flex:1;min-width:130px;padding:13px 12px;font-size:9px}.rsvp-note{font-size:10px;color:#8d8274;max-width:460px;margin:20px auto 0;line-height:1.8}.invitation-ref{display:inline-block;color:#c9ab7e;font-size:11px;letter-spacing:.12em;border-bottom:1px solid #c9ab7e7a;padding:8px 1px;margin-top:15px}
-
-footer{text-align:center;border-top:1px solid var(--line);padding:45px 20px 55px;background:#0d0b0a}.footer-logo{font:400 53px var(--serif);color:var(--lightgold);margin-bottom:12px}footer p{font-size:10px;letter-spacing:.2em;color:#b8a28b;text-transform:uppercase;line-height:1.9}
-
-@media(max-width:800px){.gate-grid{grid-template-columns:1fr 1fr}.gate-title{font-size:clamp(56px,10vw,85px)}.hero-wrap{grid-template-columns:1fr 1fr;gap:25px}.hero-title{font-size:clamp(68px,10vw,100px)}.details-grid{grid-template-columns:1fr;max-width:680px}.details-grid .detail-intro{text-align:center}.hero-description{font-size:18px}}
-
-@media(max-width:600px){.gate{padding:20px 22px}.gate-grid{display:flex;flex-direction:column;gap:18px;justify-content:center;min-height:unset}.gate-art{max-width:min(52vw,220px);transform:rotate(-3deg)}.gate-content{text-align:center}.gate-title{font-size:65px;margin:8px 0 0}.gate-title em{display:inline}.gate-content p{font-size:12px;margin:12px auto 19px;line-height:1.6}.gate .overline{font-size:9px}.nav{height:60px;padding:0 18px}.nav-links{gap:17px}.nav-links a{font-size:9px}.nav-links a:nth-child(2){display:none}.hero{padding:85px 24px 85px;min-height:auto}.hero-wrap{display:flex;flex-direction:column-reverse;gap:34px}.hero-art{width:min(78vw,330px)}.hero-copy{text-align:center}.hero-title{font-size:76px;margin:12px 0 10px}.hero-description{margin:0 auto;font-size:20px}.hero-copy .gold-rule{margin:17px auto}.hero .btn{margin-top:8px}.hero-foot{font-size:9px}.scroll{display:none}.letter .section-heading{font-size:69px}.details-card{padding:32px}.countdown-grid{gap:10px}.clock strong{font-size:58px}.clock span{font-size:8px;letter-spacing:.16em}.rsvp-panel{padding:35px 24px}.rsvp-panel .section-heading{font-size:71px}.edge-token{width:82px}.edge-token.from-left{left:-60px}.edge-token.from-right{right:-60px}}
-
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation-duration:.001ms!important;transition-duration:.001ms!important}.reveal{opacity:1;transform:none}.edge-token{display:none}}
-
-
-
-/**&#x20;Interactive invitation details&#x20;**/
-
-.interactive-card-section{padding:85px 24px;text-align:center;background:#110e0c}
-
-.interactive-card-section .hint{color:#bda785;font-size:12px;letter-spacing:.09em;margin:16px auto 30px}
-
-.flip-scene{width:min(290px,72vw);height:390px;perspective:1100px;margin:0 auto;cursor:pointer}
-
-.flip-card{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
-
-.flip-scene.flipped .flip-card{transform:rotateY(180deg)}
-
-.flip-face{position:absolute;inset:0;backface-visibility:hidden;border-radius:15px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:2px solid #b38b50;box-shadow:0 20px 65px #0009}
-
-.flip-front{background:repeating-linear-gradient(45deg,#17110f,#17110f 14px,#201713 15px,#201713 18px);outline:1px solid #8f683c;outline-offset:-14px}
-
-.flip-front .suit-mark{font-size:65px;color:#d5ad69}
-
-.flip-front strong{font:500 45px Georgia,serif;color:#e6c68b}
-
-.flip-front small{letter-spacing:.28em;text-transform:uppercase;color:#c6ae83;margin-top:20px}
-
-.flip-back{background:#f5ebd7;color:#261912;transform:rotateY(180deg);padding:25px;text-align:center}
-
-.flip-back .back-symbol{font-size:42px;color:#a93432}
-
-.flip-back strong{font:500 36px Georgia,serif}
-
-.flip-back span{font-size:13px;line-height:1.8;margin-top:15px}
-
-.flip-back a{font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-top:20px;border-bottom:1px solid #876a46;padding-bottom:5px}
-
-.flip-scene:focus-visible{outline:3px solid #e9c98d;outline-offset:8px}
-
-@media(prefers-reduced-motion:reduce){.flip-card{transition:none}}
-
-
-
-
-
-.admin-section{background:#15100e;padding:80px 22px}.admin-section[hidden],#adminLogin[hidden],#adminDashboard[hidden]{display:none!important}
-
-.admin-actions{display:flex;gap:15px;align-items:center;flex-wrap:wrap;margin:25px 0}.admin-table-wrap{overflow:auto;border:1px solid var(--line)}
-
-.admin-table{width:100%;border-collapse:collapse;text-align:left;min-width:470px}.admin-table th,.admin-table td{padding:16px;border-bottom:1px solid var(--line);font-size:13px}
-
-.admin-table th{color:var(--gold);font-size:10px;letter-spacing:.15em;text-transform:uppercase}.admin-link{background:none;border:0;color:#9e8a6e;font-size:10px;letter-spacing:.15em;text-transform:uppercase;margin-top:12px}
-
-.admin-link:hover{color:var(--lightgold)}.rsvp-submit:disabled{opacity:.6;cursor:wait}
-
-
-
-/**&#x20;Discreet background-music control&#x20;**/
-
-.music-control{position:fixed;right:19px;bottom:19px;z-index:25;display:flex;align-items:center;gap:9px;padding:11px 15px;background:#17120ff2;color:#e7c993;border:1px solid #cba46b77;border-radius:30px;box-shadow:0 9px 30px #0009;font:600 10px var(--sans);letter-spacing:.08em;transition:opacity .25s,transform .25s}
-
-.music-control:hover{transform:translateY(-2px);background:#2a2019}.music-control:focus-visible{outline:2px solid #e7c993;outline-offset:3px}.music-control[hidden]{display:none}.music-control .music-symbol{font-size:15px}.music-control.is-playing .music-symbol{animation:musicPulse 1.5s ease-in-out infinite}@keyframes musicPulse{50%{opacity:.55}}
-
-@media(max-width:600px){.music-control{right:12px;bottom:12px;padding:10px 12px;font-size:9px}}
-
-
-/* Responsive layout: preserve desktop side-by-side, stack only on phones. */
-.gate-grid > .gate-art { grid-column:1;grid-row:1;min-width:0; }
-.gate-grid > .gate-content { grid-column:2;grid-row:1;min-width:0; }
-.hero-wrap > .hero-copy { grid-column:1;grid-row:1;min-width:0; }
-.hero-wrap > .hero-art { grid-column:2;grid-row:1;min-width:0; }
-.gate-art img,.hero-art img { max-width:100%;height:auto; }
-.gate-title,.hero-title,.section-heading { overflow-wrap:normal; }
-@media (min-width: 701px) {
- .gate {overflow-y:auto;padding:clamp(24px,3vw,55px);}
- .gate-grid {display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);width:min(100%,970px);min-height:0;gap:clamp(25px,5vw,70px);align-items:center;margin:auto;}
- .gate-content {text-align:left;}
- .gate-art {max-width:365px;}
- .hero-wrap {display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1fr);align-items:center;}
- .hero-copy {text-align:left;}
- .hero-art {max-width:470px;}
-}
-@media (max-width: 700px) {
- html,body {max-width:100%;overflow-x:clip;}
- .gate {padding:20px 20px;overflow-y:auto;overscroll-behavior:contain;align-items:safe center;}
- .gate-grid {display:flex;flex-direction:column;justify-content:center;align-items:center;width:100%;max-width:440px;min-height:0;gap:clamp(15px,3vh,24px);margin:auto;}
- .gate-art {width:min(48vw,210px);max-width:210px;flex:0 0 auto;transform:rotate(-2deg);}
- .gate-content {width:100%;text-align:center;}
- .gate-title {font-size:clamp(47px,12vw,69px);line-height:.9;margin:10px 0;}
- .gate-title em {display:inline;}
- .gate-content p {font-size:clamp(11px,3vw,13px);line-height:1.65;margin:12px auto 18px;max-width:340px;}
- .gate .overline {font-size:clamp(8px,2vw,10px);letter-spacing:.23em;}
- .gate .btn {max-width:100%;padding:14px 20px;}
- .nav {padding:0 15px;gap:12px;}
- .nav-links {gap:clamp(9px,3vw,18px);}
- .nav-links a {font-size:clamp(8px,2.2vw,10px);letter-spacing:.09em;}
- .nav-links a:nth-child(2) {display:inline;}
- .hero {min-height:auto;padding:100px 22px 76px;}
- .hero-wrap {display:flex;flex-direction:column;gap:32px;width:100%;max-width:460px;}
- .hero-copy {order:1;text-align:center;width:100%;max-width:none;}
- .hero-art {order:2;width:min(78vw,330px);max-width:100%;}
- .hero-title {font-size:clamp(62px,16vw,94px);line-height:.83;margin:14px 0 20px;}
- .hero-description {font-size:clamp(17px,4.5vw,21px);margin:auto;}
- .hero-copy .gold-rule {margin:22px auto;}
- .hero-foot {font-size:9px;letter-spacing:.12em;}
- .details-grid {display:flex;flex-direction:column;gap:28px;}
- .details-grid .detail-intro {text-align:center;}
- .details-card {width:100%;padding:clamp(25px,6vw,40px);}
- .detail-value {font-size:clamp(24px,6vw,34px);}
- .section-heading {font-size:clamp(52px,13vw,80px);}
- .letter .section-heading,.rsvp-panel .section-heading {font-size:clamp(48px,12vw,72px);}
- .countdown-grid {grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 14px;margin-top:35px;}
- .clock strong {font-size:clamp(54px,15vw,82px);}
- .rsvp-panel {padding:30px 18px;}
- .rsvp-desc {font-size:clamp(18px,5vw,22px);}
- .flip-scene {width:min(290px,78vw);}
- .music-control {right:12px;bottom:12px;}
-}
-@media (max-width: 380px) {
- .gate {padding:12px 14px;}
- .gate-grid {gap:10px;}
- .gate-art {width:min(41vw,160px);}
- .gate-title {font-size:clamp(44px,11.8vw,54px);}
- .gate-content p {margin:9px auto 13px;}
- .nav-logo {font-size:24px;}
- .hero-title {font-size:clamp(58px,15vw,70px);}
- .rsvp-panel {padding:24px 15px;}
-}
-@media (max-height: 650px) and (max-width:700px) {
- .gate {display:block;overflow-y:auto;}
- .gate-grid {padding:12px 0;}
- .gate-art {width:min(32vw,145px);}
-}
-
-</style>
-
-</head>
-
-<body>
-
-<div class="gate" id="gate" role="dialog" aria-modal="true" aria-label="Open invitation">
-
-  <div class="gate-grid">
-
-    <div class="gate-art"><img src="assets/cover.jpeg" alt="A birthday invitation card with a black and gold design, featuring the text 'You're invited to Sony's Birthday'"></div>
-
-       <div class="gate-content"><div class="overline">A personal invitation for you</div><h1 class="gate-title">You're <em>invited.</em></h1><p>One special evening, beautiful company, and memories waiting to happen.</p><button class="btn" id="openInvite">Open Invitation <span aria-hidden="true">→</span></button></div>
-
-  </div>
-
-</div>
-
-<header class="nav" id="nav"><a href="#home" class="nav-logo" aria-label="Sony's birthday home">S.</a><nav class="nav-links" aria-label="Page navigation"><a href="#invitation">Invitation</a><a href="#details">Details</a><a href="#rsvp">RSVP</a></nav></header>
-
-<main>
-
-<section class="hero" id="home"><div class="hero-wrap">
-
-  <div class="hero-copy reveal"><div class="tiny">You're invited to</div><h1 class="hero-title">Sony's<br><em>Birthday</em></h1><div class="gold-rule"></div><p class="hero-description">An intimate celebration, dressed in black and gold.</p><a class="btn ghost" href="#invitation">View the invitation <span aria-hidden="true">↓</span></a><div class="hero-foot">Saturday · 24 October · 18.30</div></div>
-
-  <div class="hero-art reveal"><img src="assets/cover.jpeg" alt="A birthday invitation card with a black and gold design, featuring the text 'You're invited to Sony's Birthday'"></div>
-
-    </div><a href="#invitation" class="scroll">Scroll to discover</a></section>
-
-<section class="letter" id="invitation"><span class="edge-token from-left" data-suit="♠" aria-hidden="true"></span><div class="container reveal"><div class="small-suits" aria-hidden="true">♠ ♥ ♦ ♣</div><div class="tiny">The invitation</div><h2 class="section-heading">A night to <em>remember.</em></h2><div class="divider"></div><p>With great pleasure, you're invited to celebrate Sony's Birthday. Come for the laughter, stay for the memories, and share an evening made special by the people we love.</p><div class="divider"></div><div class="tiny">Your presence means everything</div></div></section>
-
-
-
-<section class="interactive-card-section" id="surprise">
-
- <div class="container reveal">
-
-  <div class="tiny">A little surprise</div>
-
-  <h2 class="section-heading">Flip a <em>card.</em></h2>
-
-  <p class="hint">Tap the card to reveal your invitation detail.</p>
-
-  <div class="flip-scene" id="flipScene" role="button" tabindex="0" aria-label="Flip invitation card" aria-pressed="false">
-
-   <div class="flip-card">
-
-    <div class="flip-face flip-front"><div class="suit-mark">♠</div><strong>S.</strong><small>Tap to reveal</small></div>
-
-    <div class="flip-face flip-back"><div class="back-symbol">♥</div><strong>You're Invited</strong><span>Sony's Birthday<br>24 October 2026 · 18.30<br>The Spoke Bistro, Alam Sutera</span><a href="#rsvp">Confirm your presence ↗</a></div>
-
-   </div>
-
-  </div>
-
- </div>
-
-</section>
-
-<section class="details" id="details"><div class="container details-grid"><div class="detail-intro reveal"><div class="tiny">Save the date</div><h2 class="section-heading">The<br><em>details.</em></h2><p class="bodycopy">Everything you need to know about the celebration.</p></div><div class="details-card reveal"><div class="detail-row"><div class="detail-label">When</div><div class="detail-value">Saturday, 24 October 2026</div></div><div class="detail-row"><div class="detail-label">Time</div><div class="detail-value">18.30 WIB</div></div><div class="detail-row"><div class="detail-label">Where</div><div class="detail-value">The Spoke Bistro</div><div class="detail-sub">Alam Sutera, Tangerang</div></div><a class="btn ghost map-link" href="https://www.google.com/maps/search/?api=1&amp;query=The%20Spoke%20Bistro%20Alam%20Sutera" target="_blank" rel="noopener noreferrer">Open Google Maps <span aria-hidden="true">↗</span></a></div></div></section>
-
-<section class="countdown"><span class="edge-token from-right" data-suit="♦" aria-hidden="true"></span><div class="container reveal"><div class="tiny">Counting down the moments</div><h2 class="section-heading">Until we <em>celebrate.</em></h2><div class="countdown-grid" aria-label="Countdown to 24 October 2026 at 18:30 Jakarta time"><div class="clock"><strong id="d">00</strong><span>Days</span></div><div class="clock"><strong id="h">00</strong><span>Hours</span></div><div class="clock"><strong id="m">00</strong><span>Minutes</span></div><div class="clock"><strong id="s">00</strong><span>Seconds</span></div></div></div></section>
-
-<section class="rsvp" id="rsvp"><div class="container"><div class="rsvp-panel reveal"><div class="tiny">The pleasure of your company</div><h2 class="section-heading">Kindly <em>RSVP.</em></h2><p class="rsvp-desc">We would love to know if you'll be joining us for Sony's Birthday.</p><form class="rsvp-fields" id="rsvpForm"><div class="field"><label for="guestName">Your name</label><input id="guestName" name="guestName" placeholder="Full name" autocomplete="name" required maxlength="90"></div><div class="field"><label for="attendance">Attendance</label><select id="attendance" name="attendance" required><option value="">Please select</option><option value="yes">Joyfully accepts</option><option value="no">Regretfully declines</option></select></div><button class="btn rsvp-submit" type="submit">Confirm My RSVP <span aria-hidden="true">→</span></button></form><div class="rsvp-result" id="rsvpResult" role="status"><p id="rsvpMessage"></p></div><p class="rsvp-note" id="rsvpStatus" role="status"></p><p class="rsvp-note">Your RSVP will be saved securely after confirmation. Only the organizer can view the guest list.</p><a href="#home" class="invitation-ref">Refer to invitation ↑</a></div></div></section>
-
-</main>
-
-<section class="admin-section" id="admin" hidden>
-
-<div class="container"><div class="tiny">Private access</div><h2 class="section-heading">Guest <em>list.</em></h2>
-
-<div id="adminLogin"><p class="bodycopy">Organizer access only. Sign in with your Firebase admin account.</p>
-
-<form id="loginForm" class="rsvp-fields">
-
-<div class="field"><label for="adminEmail">Email</label><input id="adminEmail" type="email" autocomplete="username" required></div>
-
-<div class="field"><label for="adminPassword">Password</label><input id="adminPassword" type="password" autocomplete="current-password" required></div>
-
-<button class="btn" type="submit">Sign in</button></form></div>
-
-<div id="adminDashboard" hidden>
-
-<div class="admin-actions"><span id="guestSummary">Loading...</span><button class="btn ghost" id="exportCsv" type="button">Export CSV</button><button class="btn ghost" id="logoutAdmin" type="button">Sign out</button></div>
-
-<div class="admin-table-wrap"><table class="admin-table"><thead><tr><th>Name</th><th>Attendance</th><th>Submitted</th></tr></thead><tbody id="guestRows"></tbody></table></div>
-
-</div><p class="rsvp-note" id="adminStatus" role="status"></p></div></section>
-
-<footer><div class="footer-logo">S.</div><p>24 October 2026 · The Spoke Bistro, Alam Sutera</p><p>Made for a beautiful evening.</p><button type="button" id="adminAccess" class="admin-link">Organizer login</button></footer>
-
-
-
-<!--*&#x20;Add your licensed audio file at assets/birthday.mp3&#x20;*-->
-
-<audio id="birthdayMusic" src="assets/myway.mp3" preload="none" loop></audio>
-
-<button type="button" id="musicToggle" class="music-control" aria-label="Play background music" aria-pressed="false" hidden><span class="music-symbol" aria-hidden="true">♫</span><span id="musicLabel">Play music</span></button>
-
-<script>
-
-(()=>{const gate=document.getElementById('gate');const open=document.getElementById('openInvite');document.body.style.overflow='hidden';open.addEventListener('click',()=>{window.startInvitationMusic?.();gate.classList.add('hide');document.body.style.overflow='';setTimeout(()=>gate.remove(),950)},{once:true});
-
-const revealObserver=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObserver.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.reveal').forEach(el=>revealObserver.observe(el));
-
-const tokenObserver=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');tokenObserver.unobserve(e.target)}})},{threshold:.12});document.querySelectorAll('.edge-token').forEach(el=>tokenObserver.observe(el));
-
-const flipScene=document.getElementById('flipScene');
-
-const flip=()=>{flipScene.classList.toggle('flipped');flipScene.setAttribute('aria-pressed',String(flipScene.classList.contains('flipped')))};
-
-flipScene.addEventListener('click',e=>{if(e.target.closest('a'))return;flip()});
-
-flipScene.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();flip()}});
-
-const nav=document.getElementById('nav');const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>36);onScroll();addEventListener('scroll',onScroll,{passive:true});
-
-const navLinks=[...document.querySelectorAll('.nav-links a')];
-
-const updateActive=()=>{const pos=window.scrollY+Math.min(window.innerHeight*.42,300);let active='invitation';for(const id of ['invitation','details','rsvp']){const el=document.getElementById(id);if(el&&el.offsetTop<=pos)active=id}navLinks.forEach(a=>{const selected=a.getAttribute('href')==='#'+active;a.classList.toggle('active',selected);if(selected)a.setAttribute('aria-current','location');else a.removeAttribute('aria-current')})};
-
-window.addEventListener('scroll',updateActive,{passive:true});window.addEventListener('resize',updateActive);updateActive();
-
-const target=new Date('2026-10-24T18:30:00+07:00').getTime();function tick(){let t=Math.max(0,target-Date.now());for(const [k,v] of Object.entries({d:Math.floor(t/864e5),h:Math.floor(t/36e5)%24,m:Math.floor(t/6e4)%60,s:Math.floor(t/1e3)%60}))document.getElementById(k).textContent=String(v).padStart(2,'0')}tick();setInterval(tick,1000);
-
-
-
-})();
-
-</script>
-
-
-
-<script type="module">
-
-import {initializeApp} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
-
-import {getFirestore,collection,addDoc,getDocs,query,orderBy,serverTimestamp} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
-
-import {getAuth,signInWithEmailAndPassword,signOut,onAuthStateChanged} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
-
-import {firebaseConfig,ADMIN_UID} from "./firebase-config.js";
-
-
-
-const status=document.getElementById('rsvpStatus');
-
-const adminStatus=document.getElementById('adminStatus');
-
-const form=document.getElementById('rsvpForm');
-
-const submit=form.querySelector('button[type=submit]');
-
-const ready=Object.values(firebaseConfig).every(x=>typeof x==='string'&&x.trim()&&!x.includes('PASTE_'))&&ADMIN_UID&&!ADMIN_UID.includes('PASTE_');
-
-let db,auth,rows=[];
-
-if(ready){
-
- const app=initializeApp(firebaseConfig);db=getFirestore(app);auth=getAuth(app);
-
- onAuthStateChanged(auth,async user=>{
-
-  const allowed=Boolean(user&&user.uid===ADMIN_UID);
-
-  document.getElementById('adminLogin').hidden=allowed;
-
-  document.getElementById('adminDashboard').hidden=!allowed;
-
-  if(allowed)await loadGuests();
-
-  else if(user){adminStatus.textContent='This account is not authorized.';await signOut(auth)}
-
- });
-
-}else{status.textContent='Firebase belum dikonfigurasi. Isi firebase-config.js dahulu.'}
-
-form.addEventListener('submit',async e=>{
-
- e.preventDefault();
-
- if(!ready){status.textContent='Firebase belum dikonfigurasi.';return}
-
- const name=document.getElementById('guestName').value.trim();
-
- const attendance=document.getElementById('attendance').value;
-
- if(name.length<2||name.length>90||!['yes','no'].includes(attendance)){status.textContent='Please enter a valid name and attendance.';return}
-
- submit.disabled=true;submit.textContent='Saving...';status.textContent='';
-
- try{
-
-  await addDoc(collection(db,'rsvps'),{name,attendance,createdAt:serverTimestamp()});
-
-  document.getElementById('rsvpMessage').textContent=`Thank you, ${name}! Your RSVP has been received. ${attendance==='yes'?"See you on 24 October!":"We'll miss you!"}`;
-
-  document.getElementById('rsvpResult').classList.add('show');form.reset();
-
-  status.textContent='Your response was saved successfully.';
-
- }catch(err){console.error(err);status.textContent='Could not save RSVP. Please try again.'}
-
- finally{submit.disabled=false;submit.textContent='Confirm My RSVP'}
-
-});
-
-document.getElementById('adminAccess').addEventListener('click',()=>{
-
- const section=document.getElementById('admin');section.hidden=false;
-
- section.scrollIntoView({behavior:'smooth'});});
-
-document.getElementById('loginForm').addEventListener('submit',async e=>{
-
- e.preventDefault();if(!ready){adminStatus.textContent='Configure Firebase first.';return}
-
- adminStatus.textContent='Signing in...';
-
- try{
-
-  const cred=await signInWithEmailAndPassword(auth,document.getElementById('adminEmail').value,document.getElementById('adminPassword').value);
-
-  if(cred.user.uid!==ADMIN_UID){await signOut(auth);adminStatus.textContent='Not an authorized organizer.';return}
-
-  adminStatus.textContent='';document.getElementById('adminPassword').value='';
-
- }catch(err){console.error(err);adminStatus.textContent='Login failed. Check email and password.'}
-
-});
-
-async function loadGuests(){
-
- adminStatus.textContent='Loading guest list...';
-
- try{
-
-  const snap=await getDocs(query(collection(db,'rsvps'),orderBy('createdAt','desc')));
-
-  rows=snap.docs.map(doc=>({id:doc.id,...doc.data()}));
-
-  const tbody=document.getElementById('guestRows');tbody.replaceChildren();
-
-  for(const r of rows){
-
-   const tr=document.createElement('tr');
-
-   const date=r.createdAt?.toDate?.()?.toLocaleString('en-GB',{timeZone:'Asia/Jakarta'})||'—';
-
-   for(const v of [r.name,r.attendance==='yes'?'Attending':'Declined',date]){
-
-    const td=document.createElement('td');td.textContent=String(v||'');tr.appendChild(td)
-
-   }tbody.appendChild(tr)
-
-  }
-
-  document.getElementById('guestSummary').textContent=`${rows.length} responses · ${rows.filter(x=>x.attendance==='yes').length} attending · ${rows.filter(x=>x.attendance==='no').length} declined`;
-
-  adminStatus.textContent='';
-
- }catch(err){console.error(err);adminStatus.textContent='Unable to load guests. Check Firestore rules and admin UID.'}
-
-}
-
-document.getElementById('logoutAdmin').addEventListener('click',()=>signOut(auth));
-
-document.getElementById('exportCsv').addEventListener('click',()=>{
-
- const esc=v=>'"'+String(v??'').replaceAll('"','""')+'"';
-
- const csv=[['Name','Attendance','Submitted (Jakarta)'],...rows.map(r=>[r.name,r.attendance,r.createdAt?.toDate?.()?.toLocaleString('en-GB',{timeZone:'Asia/Jakarta'})||''])].map(row=>row.map(esc).join(',')).join('\r\n');
-
- const blob=new Blob(['\uFEFF'+csv],{type:'text/csv;charset=utf-8'});
-
- const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='sony-rsvp.csv';a.click();URL.revokeObjectURL(url);
-
-});
-
-</script>
-
-
-
-<script>
-
-(()=>{
-
- const audio=document.getElementById('birthdayMusic');
-
- const toggle=document.getElementById('musicToggle');
-
- const label=document.getElementById('musicLabel');
-
- audio.volume=.30;
-
- const update=()=>{const playing=!audio.paused;toggle.classList.toggle('is-playing',playing);toggle.setAttribute('aria-pressed',String(playing));toggle.setAttribute('aria-label',playing?'Pause background music':'Play background music');label.textContent=playing?'Pause music':'Play music'};
-
- const tryPlay=()=>{toggle.hidden=false;audio.play().then(update).catch(()=>{update();label.textContent='Play music'})};
-
- window.startInvitationMusic=tryPlay;
-
- toggle.addEventListener('click',()=>{if(audio.paused)tryPlay();else{audio.pause();update()}});
-
- audio.addEventListener('play',update);audio.addEventListener('pause',update);
-
- audio.addEventListener('error',()=>{toggle.hidden=false;label.textContent='Add music file';toggle.setAttribute('aria-label','Music file not found')});
-
-})();
-
-</script>
-
-</body></html>
+  <head>
+    <meta charset="utf-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+
+    <meta name="theme-color" content="#0d0b0a" />
+
+    <meta
+      name="description"
+      content="You're invited to Sony's Birthday, 24 October 2026 at Millennium Hotel Sirih Jakarta, Jakarta Utara."
+    />
+
+    <title>Sony's Birthday | You're Invited</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --bg: #0e0c0b;
+        --ink: #eee4d3;
+        --gold: #cba46b;
+        --lightgold: #e7c993;
+        --line: rgba(202, 162, 100, 0.27);
+        --muted: #b6a99a;
+        --serif: "Cormorant Garamond", Georgia, serif;
+        --sans: "DM Sans", Arial, sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 80px;
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: var(--sans);
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      button,
+      input,
+      select {
+        font: inherit;
+      }
+      button {
+        cursor: pointer;
+      }
+      button:focus-visible,
+      a:focus-visible,
+      input:focus-visible,
+      select:focus-visible {
+        outline: 2px solid var(--lightgold);
+        outline-offset: 4px;
+      }
+
+      body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        z-index: 30;
+        pointer-events: none;
+        opacity: 0.13;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.75' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.21'/%3E%3C/svg%3E");
+      }
+
+      /**&#x20;Entrance&#x20;**/
+
+      .gate {
+        position: fixed;
+        inset: 0;
+        z-index: 100;
+        display: grid;
+        place-items: center;
+        background: radial-gradient(
+          circle at 50% 30%,
+          #292019 0%,
+          #120f0d 50%,
+          #090807 100%
+        );
+        padding: 20px;
+        transition:
+          opacity 0.8s ease,
+          visibility 0.8s ease;
+      }
+      .gate.hide {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+      }
+      .gate-grid {
+        width: min(100%, 970px);
+        min-height: min(650px, 90dvh);
+        display: grid;
+        grid-template-columns: 1.05fr 0.95fr;
+        align-items: center;
+        gap: clamp(20px, 5vw, 70px);
+      }
+      .gate-art {
+        width: 100%;
+        max-width: 365px;
+        justify-self: center;
+        transform: rotate(-3deg);
+        filter: drop-shadow(0 30px 45px #0009);
+      }
+      .gate-art img {
+        width: 100%;
+        display: block;
+        border-radius: 3px;
+        border: 1px solid #856537;
+      }
+      .gate-content {
+        text-align: left;
+      }
+      .overline {
+        color: var(--gold);
+        font-size: 10px;
+        font-weight: 600;
+        letter-spacing: 0.37em;
+        text-transform: uppercase;
+        line-height: 2;
+      }
+      .gate-title {
+        font: 500 clamp(64px, 8vw, 110px)/0.82 var(--serif);
+        letter-spacing: -0.045em;
+        margin: 22px 0 15px;
+      }
+      .gate-title em {
+        display: block;
+        color: var(--lightgold);
+        font-weight: 400;
+      }
+      .gate-content p {
+        color: #c8bbaa;
+        font-size: 13px;
+        line-height: 1.9;
+        max-width: 390px;
+        margin: 22px 0 28px;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13px;
+        padding: 16px 25px;
+        min-height: 49px;
+        border: 1px solid var(--gold);
+        background: var(--gold);
+        color: #17110d;
+        letter-spacing: 0.21em;
+        font-size: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition:
+          background 0.25s,
+          transform 0.25s,
+          border-color 0.25s;
+      }
+      .btn:hover {
+        background: var(--lightgold);
+        border-color: var(--lightgold);
+        transform: translateY(-2px);
+      }
+      .btn.ghost {
+        background: transparent;
+        color: var(--lightgold);
+      }
+      .btn.ghost:hover {
+        background: rgba(203, 164, 107, 0.09);
+      }
+
+      /**&#x20;Navigation&#x20;**/
+
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 20;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 clamp(22px, 6vw, 90px);
+        background: linear-gradient(#0d0b0ada, #0d0b0a00);
+        transition:
+          background 0.3s,
+          border-color 0.3s;
+        border-bottom: 1px solid transparent;
+      }
+      .nav.scrolled {
+        background: #100e0cec;
+        backdrop-filter: blur(14px);
+        border-color: #cba46b21;
+      }
+      .nav-logo {
+        font: 500 29px var(--serif);
+        color: var(--lightgold);
+      }
+      .nav-links {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+      }
+      .nav-links a {
+        font-size: 10px;
+        letter-spacing: 0.21em;
+        text-transform: uppercase;
+        color: #d0bd9f;
+        transition: color 0.2s;
+      }
+      .nav-links a:hover {
+        color: #fff;
+      }
+      .nav-links a {
+        border-bottom: 1px solid transparent;
+        padding-bottom: 5px;
+      }
+      .nav-links a.active {
+        border-bottom-color: #cba46b;
+        color: #fff;
+      }
+
+      /**&#x20;Hero&#x20;**/
+
+      .hero {
+        position: relative;
+        min-height: 100svh;
+        display: grid;
+        place-items: center;
+        isolation: isolate;
+        padding: 110px 24px 90px;
+        overflow: hidden;
+        background: radial-gradient(
+          ellipse at 48% 30%,
+          #302319 0%,
+          #17120f 35%,
+          #0c0a09 75%
+        );
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -2;
+        background: repeating-linear-gradient(
+          150deg,
+          transparent 0 190px,
+          rgba(205, 160, 92, 0.04) 191px 193px,
+          transparent 194px 280px
+        );
+        mask-image: linear-gradient(90deg, #000, transparent 60%, #000);
+      }
+      .hero-wrap {
+        width: min(100%, 1120px);
+        display: grid;
+        grid-template-columns: 0.85fr 1fr;
+        gap: clamp(30px, 7vw, 110px);
+        align-items: center;
+      }
+      .hero-copy {
+        max-width: 430px;
+      }
+      .hero-title {
+        font: 500 clamp(78px, 11vw, 145px)/0.76 var(--serif);
+        letter-spacing: -0.055em;
+        margin: 18px 0 26px;
+      }
+      .hero-title em {
+        display: block;
+        font-weight: 400;
+        color: var(--lightgold);
+        font-size: 0.88em;
+      }
+      .hero-description {
+        font: 400 clamp(17px, 2.2vw, 22px)/1.45 var(--serif);
+        color: #d9cbb6;
+        max-width: 390px;
+      }
+      .gold-rule {
+        width: 60px;
+        height: 1px;
+        background: var(--gold);
+        margin: 28px 0;
+      }
+      .hero-art {
+        position: relative;
+        width: min(100%, 470px);
+        margin: auto;
+      }
+      .hero-art::before {
+        content: "";
+        position: absolute;
+        inset: 20px -16px -20px 16px;
+        border: 1px solid var(--line);
+        transform: rotate(3deg);
+        z-index: -1;
+      }
+      .hero-art img {
+        display: block;
+        width: 100%;
+        height: auto;
+        box-shadow: 0 35px 100px #000b;
+        border: 1px solid #90704744;
+        transform: rotate(1deg);
+      }
+      .hero-foot {
+        margin-top: 22px;
+        color: #b5a187;
+        font-size: 10px;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+      }
+      .scroll {
+        position: absolute;
+        bottom: 28px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 9px;
+        color: #c8b397;
+        letter-spacing: 0.27em;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        animation: breath 2.3s infinite;
+      }
+      .scroll::after {
+        content: "↓";
+        font-size: 19px;
+      }
+      @keyframes breath {
+        50% {
+          opacity: 0.55;
+        }
+      }
+
+      /**&#x20;Shared&#x20;**/
+
+      section {
+        position: relative;
+        padding: clamp(85px, 11vw, 155px) 22px;
+      }
+      .container {
+        width: min(100%, 1060px);
+        margin: auto;
+      }
+      .tiny {
+        color: var(--gold);
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.35em;
+        font-weight: 600;
+      }
+      .section-heading {
+        font: 400 clamp(60px, 8.2vw, 112px)/0.94 var(--serif);
+        letter-spacing: -0.045em;
+        margin: 18px 0 24px;
+      }
+      .section-heading em {
+        color: var(--lightgold);
+        font-weight: 400;
+      }
+      .bodycopy {
+        font-size: 14px;
+        line-height: 2;
+        color: #cabfb0;
+      }
+      .reveal {
+        opacity: 0;
+        transform: translateY(24px);
+        transition:
+          opacity 0.9s ease,
+          transform 0.9s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: none;
+      }
+
+      /**&#x20;small, edge-contained visuals only, NEVER a fixed viewport overlay&#x20;**/
+
+      .edge-token {
+        position: absolute;
+        pointer-events: none;
+        width: clamp(66px, 9vw, 118px);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: repeating-conic-gradient(
+          #b89357 0 12deg,
+          #171412 12deg 37deg,
+          #c29e69 37deg 43deg,
+          #171412 43deg 67deg
+        );
+        border: 6px solid #16120f;
+        box-shadow:
+          0 17px 30px #0008,
+          inset 0 0 0 3px #aa8959;
+        display: grid;
+        place-items: center;
+        opacity: 0.6;
+        z-index: 0;
+        transition:
+          transform 1.3s cubic-bezier(0.2, 0.7, 0.2, 1),
+          opacity 1.3s;
+      }
+      .edge-token::after {
+        content: attr(data-suit);
+        display: grid;
+        place-items: center;
+        background: #191512;
+        border: 2px solid #b08d58;
+        width: 62%;
+        height: 62%;
+        border-radius: 50%;
+        font: 38px var(--serif);
+        color: #c5a272;
+      }
+      .edge-token.from-left {
+        left: -44px;
+        top: 22%;
+        transform: translate(-95px, 55px) rotate(-70deg);
+      }
+      .edge-token.from-right {
+        right: -48px;
+        bottom: 9%;
+        transform: translate(95px, 40px) rotate(65deg);
+      }
+      .edge-token.in {
+        transform: translate(0, 0) rotate(0deg);
+        opacity: 0.56;
+      }
+
+      /**&#x20;Letter section&#x20;**/
+
+      .letter {
+        background: #17120f;
+        text-align: center;
+        overflow: hidden;
+      }
+      .letter .container {
+        position: relative;
+        z-index: 1;
+      }
+      .small-suits {
+        color: var(--gold);
+        letter-spacing: 0.65em;
+        font-size: 16px;
+        margin-bottom: 28px;
+      }
+      .letter p {
+        max-width: 570px;
+        margin: 0 auto;
+        font: 400 clamp(23px, 3.1vw, 34px)/1.5 var(--serif);
+        color: #ddcbb7;
+      }
+      .letter .section-heading {
+        margin-bottom: 35px;
+      }
+      .letter .divider {
+        width: 1px;
+        height: 75px;
+        background: linear-gradient(transparent, var(--gold), transparent);
+        margin: 38px auto;
+      }
+
+      /**&#x20;Details&#x20;**/
+
+      .details {
+        background: linear-gradient(180deg, #100e0c, #15110e);
+      }
+      .details-grid {
+        display: grid;
+        grid-template-columns: 0.8fr 1.2fr;
+        gap: clamp(35px, 6vw, 90px);
+        align-items: center;
+      }
+      .details-card {
+        border: 1px solid var(--line);
+        background: linear-gradient(140deg, #211912, #110f0d);
+        padding: clamp(30px, 5vw, 70px);
+        position: relative;
+        box-shadow: 0 20px 60px #0004;
+      }
+      .details-card:before,
+      .details-card:after {
+        content: "✦";
+        position: absolute;
+        color: var(--gold);
+        font-size: 14px;
+        background: #17120f;
+        padding: 8px;
+      }
+      .details-card:before {
+        top: -16px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .details-card:after {
+        bottom: -16px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      .detail-row {
+        padding: 22px 0;
+        border-bottom: 1px solid var(--line);
+      }
+      .detail-row:last-child {
+        border-bottom: 0;
+      }
+      .detail-label {
+        font-size: 10px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 10px;
+      }
+      .detail-value {
+        font: 400 clamp(27px, 4vw, 39px)/1.08 var(--serif);
+        color: var(--ink);
+      }
+      .detail-sub {
+        color: var(--muted);
+        font-size: 12px;
+        margin-top: 9px;
+      }
+      .map-link {
+        margin-top: 30px;
+      }
+
+      /**&#x20;Countdown&#x20;**/
+
+      .countdown {
+        background: linear-gradient(180deg, #17120f, #120f0d);
+        text-align: center;
+      }
+      .countdown-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 18px;
+        max-width: 720px;
+        margin: 55px auto 0;
+      }
+      .clock {
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 25px;
+      }
+      .clock strong {
+        font: 400 clamp(55px, 9vw, 110px)/0.9 var(--serif);
+        font-variant-numeric: tabular-nums;
+        color: var(--lightgold);
+        display: block;
+      }
+      .clock span {
+        display: block;
+        font-size: 10px;
+        letter-spacing: 0.3em;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-top: 18px;
+      }
+
+      /**&#x20;RSVP&#x20;**/
+
+      .rsvp {
+        background: radial-gradient(
+          ellipse at center 15%,
+          #291c13,
+          #100d0b 70%
+        );
+        text-align: center;
+      }
+      .rsvp-panel {
+        border: 1px solid var(--line);
+        max-width: 740px;
+        margin: auto;
+        padding: clamp(32px, 6vw, 70px);
+        background: linear-gradient(145deg, #211710bf, #100d0bb8);
+        box-shadow: 0 25px 60px #0006;
+        position: relative;
+      }
+      .rsvp-panel:before {
+        content: "";
+        position: absolute;
+        inset: 10px;
+        border: 1px solid #cba46b19;
+        pointer-events: none;
+      }
+      .rsvp-panel .section-heading {
+        font-size: clamp(62px, 9vw, 105px);
+      }
+      .rsvp-desc {
+        color: #cbbca8;
+        font: 400 22px/1.55 var(--serif);
+        max-width: 480px;
+        margin: 0 auto 30px;
+      }
+      .rsvp-fields {
+        max-width: 440px;
+        margin: 0 auto;
+        text-align: left;
+        display: grid;
+        gap: 18px;
+      }
+      .field label {
+        display: block;
+        color: var(--gold);
+        font-size: 10px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+      .field input,
+      .field select {
+        width: 100%;
+        padding: 15px 15px;
+        background: #100d0b;
+        color: #f1e6d4;
+        border: 1px solid #775e3f;
+        border-radius: 0;
+        outline: none;
+      }
+      .field select option {
+        background: #18110d;
+      }
+      .choice-hint {
+        font-size: 11px;
+        color: #a99986;
+        line-height: 1.7;
+      }
+      .rsvp-submit {
+        width: 100%;
+        margin-top: 8px;
+      }
+      .rsvp-result {
+        display: none;
+        max-width: 440px;
+        margin: 28px auto 0;
+        padding: 20px;
+        border: 1px solid var(--line);
+        color: #e8d4b1;
+        text-align: left;
+        font-size: 12px;
+        line-height: 1.7;
+      }
+      .rsvp-result.show {
+        display: block;
+      }
+      .rsvp-result p {
+        white-space: pre-line;
+        margin: 0 0 16px;
+      }
+      .rsvp-result-actions {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+      .rsvp-result-actions .btn {
+        flex: 1;
+        min-width: 130px;
+        padding: 13px 12px;
+        font-size: 9px;
+      }
+      .rsvp-note {
+        font-size: 10px;
+        color: #8d8274;
+        max-width: 460px;
+        margin: 20px auto 0;
+        line-height: 1.8;
+      }
+      .invitation-ref {
+        display: inline-block;
+        color: #c9ab7e;
+        font-size: 11px;
+        letter-spacing: 0.12em;
+        border-bottom: 1px solid #c9ab7e7a;
+        padding: 8px 1px;
+        margin-top: 15px;
+      }
+
+      footer {
+        text-align: center;
+        border-top: 1px solid var(--line);
+        padding: 45px 20px 55px;
+        background: #0d0b0a;
+      }
+      .footer-logo {
+        font: 400 53px var(--serif);
+        color: var(--lightgold);
+        margin-bottom: 12px;
+      }
+      footer p {
+        font-size: 10px;
+        letter-spacing: 0.2em;
+        color: #b8a28b;
+        text-transform: uppercase;
+        line-height: 1.9;
+      }
+
+      @media (max-width: 800px) {
+        .gate-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .gate-title {
+          font-size: clamp(56px, 10vw, 85px);
+        }
+        .hero-wrap {
+          grid-template-columns: 1fr 1fr;
+          gap: 25px;
+        }
+        .hero-title {
+          font-size: clamp(68px, 10vw, 100px);
+        }
+        .details-grid {
+          grid-template-columns: 1fr;
+          max-width: 680px;
+        }
+        .details-grid .detail-intro {
+          text-align: center;
+        }
+        .hero-description {
+          font-size: 18px;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .gate {
+          padding: 20px 22px;
+        }
+        .gate-grid {
+          display: flex;
+          flex-direction: column;
+          gap: 18px;
+          justify-content: center;
+          min-height: unset;
+        }
+        .gate-art {
+          max-width: min(52vw, 220px);
+          transform: rotate(-3deg);
+        }
+        .gate-content {
+          text-align: center;
+        }
+        .gate-title {
+          font-size: 65px;
+          margin: 8px 0 0;
+        }
+        .gate-title em {
+          display: inline;
+        }
+        .gate-content p {
+          font-size: 12px;
+          margin: 12px auto 19px;
+          line-height: 1.6;
+        }
+        .gate .overline {
+          font-size: 9px;
+        }
+        .nav {
+          height: 60px;
+          padding: 0 18px;
+        }
+        .nav-links {
+          gap: 17px;
+        }
+        .nav-links a {
+          font-size: 9px;
+        }
+        .nav-links a:nth-child(2) {
+          display: none;
+        }
+        .hero {
+          padding: 85px 24px 85px;
+          min-height: auto;
+        }
+        .hero-wrap {
+          display: flex;
+          flex-direction: column-reverse;
+          gap: 34px;
+        }
+        .hero-art {
+          width: min(78vw, 330px);
+        }
+        .hero-copy {
+          text-align: center;
+        }
+        .hero-title {
+          font-size: 76px;
+          margin: 12px 0 10px;
+        }
+        .hero-description {
+          margin: 0 auto;
+          font-size: 20px;
+        }
+        .hero-copy .gold-rule {
+          margin: 17px auto;
+        }
+        .hero .btn {
+          margin-top: 8px;
+        }
+        .hero-foot {
+          font-size: 9px;
+        }
+        .scroll {
+          display: none;
+        }
+        .letter .section-heading {
+          font-size: 69px;
+        }
+        .details-card {
+          padding: 32px;
+        }
+        .countdown-grid {
+          gap: 10px;
+        }
+        .clock strong {
+          font-size: 58px;
+        }
+        .clock span {
+          font-size: 8px;
+          letter-spacing: 0.16em;
+        }
+        .rsvp-panel {
+          padding: 35px 24px;
+        }
+        .rsvp-panel .section-heading {
+          font-size: 71px;
+        }
+        .edge-token {
+          width: 82px;
+        }
+        .edge-token.from-left {
+          left: -60px;
+        }
+        .edge-token.from-right {
+          right: -60px;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+        *,
+        *:before,
+        *:after {
+          animation-duration: 0.001ms !important;
+          transition-duration: 0.001ms !important;
+        }
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+        .edge-token {
+          display: none;
+        }
+      }
+
+      /**&#x20;Interactive invitation details&#x20;**/
+
+      .interactive-card-section {
+        padding: 85px 24px;
+        text-align: center;
+        background: #110e0c;
+      }
+
+      .interactive-card-section .hint {
+        color: #bda785;
+        font-size: 12px;
+        letter-spacing: 0.09em;
+        margin: 16px auto 30px;
+      }
+
+      .flip-scene {
+        width: min(290px, 72vw);
+        height: 390px;
+        perspective: 1100px;
+        margin: 0 auto;
+        cursor: pointer;
+      }
+
+      .flip-card {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+      }
+
+      .flip-scene.flipped .flip-card {
+        transform: rotateY(180deg);
+      }
+
+      .flip-face {
+        position: absolute;
+        inset: 0;
+        backface-visibility: hidden;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid #b38b50;
+        box-shadow: 0 20px 65px #0009;
+      }
+
+      .flip-front {
+        background: repeating-linear-gradient(
+          45deg,
+          #17110f,
+          #17110f 14px,
+          #201713 15px,
+          #201713 18px
+        );
+        outline: 1px solid #8f683c;
+        outline-offset: -14px;
+      }
+
+      .flip-front .suit-mark {
+        font-size: 65px;
+        color: #d5ad69;
+      }
+
+      .flip-front strong {
+        font:
+          500 45px Georgia,
+          serif;
+        color: #e6c68b;
+      }
+
+      .flip-front small {
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: #c6ae83;
+        margin-top: 20px;
+      }
+
+      .flip-back {
+        background: #f5ebd7;
+        color: #261912;
+        transform: rotateY(180deg);
+        padding: 25px;
+        text-align: center;
+      }
+
+      .flip-back .back-symbol {
+        font-size: 42px;
+        color: #a93432;
+      }
+
+      .flip-back strong {
+        font:
+          500 36px Georgia,
+          serif;
+      }
+
+      .flip-back span {
+        font-size: 13px;
+        line-height: 1.8;
+        margin-top: 15px;
+      }
+
+      .flip-back a {
+        font-size: 11px;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        margin-top: 20px;
+        border-bottom: 1px solid #876a46;
+        padding-bottom: 5px;
+      }
+
+      .flip-scene:focus-visible {
+        outline: 3px solid #e9c98d;
+        outline-offset: 8px;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .flip-card {
+          transition: none;
+        }
+      }
+
+      .admin-section {
+        background: #15100e;
+        padding: 80px 22px;
+      }
+      .admin-section[hidden],
+      #adminLogin[hidden],
+      #adminDashboard[hidden] {
+        display: none !important;
+      }
+
+      .admin-actions {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 25px 0;
+      }
+      .admin-table-wrap {
+        overflow: auto;
+        border: 1px solid var(--line);
+      }
+
+      .admin-table {
+        width: 100%;
+        border-collapse: collapse;
+        text-align: left;
+        min-width: 470px;
+      }
+      .admin-table th,
+      .admin-table td {
+        padding: 16px;
+        border-bottom: 1px solid var(--line);
+        font-size: 13px;
+      }
+
+      .admin-table th {
+        color: var(--gold);
+        font-size: 10px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+      }
+      .admin-link {
+        background: none;
+        border: 0;
+        color: #9e8a6e;
+        font-size: 10px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-top: 12px;
+      }
+
+      .admin-link:hover {
+        color: var(--lightgold);
+      }
+      .rsvp-submit:disabled {
+        opacity: 0.6;
+        cursor: wait;
+      }
+
+      /**&#x20;Discreet background-music control&#x20;**/
+
+      .music-control {
+        position: fixed;
+        right: 19px;
+        bottom: 19px;
+        z-index: 25;
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        padding: 11px 15px;
+        background: #17120ff2;
+        color: #e7c993;
+        border: 1px solid #cba46b77;
+        border-radius: 30px;
+        box-shadow: 0 9px 30px #0009;
+        font: 600 10px var(--sans);
+        letter-spacing: 0.08em;
+        transition:
+          opacity 0.25s,
+          transform 0.25s;
+      }
+
+      .music-control:hover {
+        transform: translateY(-2px);
+        background: #2a2019;
+      }
+      .music-control:focus-visible {
+        outline: 2px solid #e7c993;
+        outline-offset: 3px;
+      }
+      .music-control[hidden] {
+        display: none;
+      }
+      .music-control .music-symbol {
+        font-size: 15px;
+      }
+      .music-control.is-playing .music-symbol {
+        animation: musicPulse 1.5s ease-in-out infinite;
+      }
+      @keyframes musicPulse {
+        50% {
+          opacity: 0.55;
+        }
+      }
+
+      @media (max-width: 600px) {
+        .music-control {
+          right: 12px;
+          bottom: 12px;
+          padding: 10px 12px;
+          font-size: 9px;
+        }
+      }
+
+      /* Responsive layout: preserve desktop side-by-side, stack only on phones. */
+      .gate-grid > .gate-art {
+        grid-column: 1;
+        grid-row: 1;
+        min-width: 0;
+      }
+      .gate-grid > .gate-content {
+        grid-column: 2;
+        grid-row: 1;
+        min-width: 0;
+      }
+      .hero-wrap > .hero-copy {
+        grid-column: 1;
+        grid-row: 1;
+        min-width: 0;
+      }
+      .hero-wrap > .hero-art {
+        grid-column: 2;
+        grid-row: 1;
+        min-width: 0;
+      }
+      .gate-art img,
+      .hero-art img {
+        max-width: 100%;
+        height: auto;
+      }
+      .gate-title,
+      .hero-title,
+      .section-heading {
+        overflow-wrap: normal;
+      }
+      @media (min-width: 701px) {
+        .gate {
+          overflow-y: auto;
+          padding: clamp(24px, 3vw, 55px);
+        }
+        .gate-grid {
+          display: grid;
+          grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+          width: min(100%, 970px);
+          min-height: 0;
+          gap: clamp(25px, 5vw, 70px);
+          align-items: center;
+          margin: auto;
+        }
+        .gate-content {
+          text-align: left;
+        }
+        .gate-art {
+          max-width: 365px;
+        }
+        .hero-wrap {
+          display: grid;
+          grid-template-columns: minmax(0, 0.85fr) minmax(0, 1fr);
+          align-items: center;
+        }
+        .hero-copy {
+          text-align: left;
+        }
+        .hero-art {
+          max-width: 470px;
+        }
+      }
+      @media (max-width: 700px) {
+        html,
+        body {
+          max-width: 100%;
+          overflow-x: clip;
+        }
+        .gate {
+          padding: 20px 20px;
+          overflow-y: auto;
+          overscroll-behavior: contain;
+          align-items: safe center;
+        }
+        .gate-grid {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          max-width: 440px;
+          min-height: 0;
+          gap: clamp(15px, 3vh, 24px);
+          margin: auto;
+        }
+        .gate-art {
+          width: min(48vw, 210px);
+          max-width: 210px;
+          flex: 0 0 auto;
+          transform: rotate(-2deg);
+        }
+        .gate-content {
+          width: 100%;
+          text-align: center;
+        }
+        .gate-title {
+          font-size: clamp(47px, 12vw, 69px);
+          line-height: 0.9;
+          margin: 10px 0;
+        }
+        .gate-title em {
+          display: inline;
+        }
+        .gate-content p {
+          font-size: clamp(11px, 3vw, 13px);
+          line-height: 1.65;
+          margin: 12px auto 18px;
+          max-width: 340px;
+        }
+        .gate .overline {
+          font-size: clamp(8px, 2vw, 10px);
+          letter-spacing: 0.23em;
+        }
+        .gate .btn {
+          max-width: 100%;
+          padding: 14px 20px;
+        }
+        .nav {
+          padding: 0 15px;
+          gap: 12px;
+        }
+        .nav-links {
+          gap: clamp(9px, 3vw, 18px);
+        }
+        .nav-links a {
+          font-size: clamp(8px, 2.2vw, 10px);
+          letter-spacing: 0.09em;
+        }
+        .nav-links a:nth-child(2) {
+          display: inline;
+        }
+        .hero {
+          min-height: auto;
+          padding: 100px 22px 76px;
+        }
+        .hero-wrap {
+          display: flex;
+          flex-direction: column;
+          gap: 32px;
+          width: 100%;
+          max-width: 460px;
+        }
+        .hero-copy {
+          order: 1;
+          text-align: center;
+          width: 100%;
+          max-width: none;
+        }
+        .hero-art {
+          order: 2;
+          width: min(78vw, 330px);
+          max-width: 100%;
+        }
+        .hero-title {
+          font-size: clamp(62px, 16vw, 94px);
+          line-height: 0.83;
+          margin: 14px 0 20px;
+        }
+        .hero-description {
+          font-size: clamp(17px, 4.5vw, 21px);
+          margin: auto;
+        }
+        .hero-copy .gold-rule {
+          margin: 22px auto;
+        }
+        .hero-foot {
+          font-size: 9px;
+          letter-spacing: 0.12em;
+        }
+        .details-grid {
+          display: flex;
+          flex-direction: column;
+          gap: 28px;
+        }
+        .details-grid .detail-intro {
+          text-align: center;
+        }
+        .details-card {
+          width: 100%;
+          padding: clamp(25px, 6vw, 40px);
+        }
+        .detail-value {
+          font-size: clamp(24px, 6vw, 34px);
+        }
+        .section-heading {
+          font-size: clamp(52px, 13vw, 80px);
+        }
+        .letter .section-heading,
+        .rsvp-panel .section-heading {
+          font-size: clamp(48px, 12vw, 72px);
+        }
+        .countdown-grid {
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          gap: 22px 14px;
+          margin-top: 35px;
+        }
+        .clock strong {
+          font-size: clamp(54px, 15vw, 82px);
+        }
+        .rsvp-panel {
+          padding: 30px 18px;
+        }
+        .rsvp-desc {
+          font-size: clamp(18px, 5vw, 22px);
+        }
+        .flip-scene {
+          width: min(290px, 78vw);
+        }
+        .music-control {
+          right: 12px;
+          bottom: 12px;
+        }
+      }
+      @media (max-width: 380px) {
+        .gate {
+          padding: 12px 14px;
+        }
+        .gate-grid {
+          gap: 10px;
+        }
+        .gate-art {
+          width: min(41vw, 160px);
+        }
+        .gate-title {
+          font-size: clamp(44px, 11.8vw, 54px);
+        }
+        .gate-content p {
+          margin: 9px auto 13px;
+        }
+        .nav-logo {
+          font-size: 24px;
+        }
+        .hero-title {
+          font-size: clamp(58px, 15vw, 70px);
+        }
+        .rsvp-panel {
+          padding: 24px 15px;
+        }
+      }
+      @media (max-height: 650px) and (max-width: 700px) {
+        .gate {
+          display: block;
+          overflow-y: auto;
+        }
+        .gate-grid {
+          padding: 12px 0;
+        }
+        .gate-art {
+          width: min(32vw, 145px);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="gate"
+      id="gate"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Open invitation"
+    >
+       
+      <div class="gate-grid">
+           
+        <div class="gate-art">
+          <img
+            src="assets/cover.jpeg"
+            alt="A birthday invitation card with a black and gold design, featuring the text 'You're invited to Sony's Birthday'"
+          />
+        </div>
+
+               
+        <div class="gate-content">
+          <div class="overline">A personal invitation for you</div>
+          <h1 class="gate-title">You're <em>invited.</em></h1>
+          <p>
+            One special evening, beautiful company, and memories waiting to
+            happen.
+          </p>
+          <button class="btn" id="openInvite">
+            Open Invitation <span aria-hidden="true">→</span>
+          </button>
+        </div>
+
+         
+      </div>
+    </div>
+
+    <header class="nav" id="nav">
+      <a href="#home" class="nav-logo" aria-label="Sony's birthday home">S.</a>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#invitation">Invitation</a><a href="#details">Details</a
+        ><a href="#rsvp">RSVP</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-wrap">
+           
+          <div class="hero-copy reveal">
+            <div class="tiny">You're invited to</div>
+            <h1 class="hero-title">Sony's<br /><em>Birthday</em></h1>
+            <div class="gold-rule"></div>
+            <p class="hero-description">
+              An intimate celebration, dressed in black and gold.
+            </p>
+            <a class="btn ghost" href="#invitation"
+              >View the invitation <span aria-hidden="true">↓</span></a
+            >
+            <div class="hero-foot">Saturday · 24 October · 18.30</div>
+          </div>
+
+           
+          <div class="hero-art reveal">
+            <img
+              src="assets/cover.jpeg"
+              alt="A birthday invitation card with a black and gold design, featuring the text 'You're invited to Sony's Birthday'"
+            />
+          </div>
+
+             
+        </div>
+        <a href="#invitation" class="scroll">Scroll to discover</a>
+      </section>
+
+      <section class="letter" id="invitation">
+        <span
+          class="edge-token from-left"
+          data-suit="♠"
+          aria-hidden="true"
+        ></span>
+        <div class="container reveal">
+          <div class="small-suits" aria-hidden="true">♠ ♥ ♦ ♣</div>
+          <div class="tiny">The invitation</div>
+          <h2 class="section-heading">A night to <em>remember.</em></h2>
+          <div class="divider"></div>
+          <p>
+            With great pleasure, you're invited to celebrate Sony's Birthday.
+            Come for the laughter, stay for the memories, and share an evening
+            made special by the people we love.
+          </p>
+          <div class="divider"></div>
+          <div class="tiny">Your presence means everything</div>
+        </div>
+      </section>
+
+      <section class="interactive-card-section" id="surprise">
+         
+        <div class="container reveal">
+           
+          <div class="tiny">A little surprise</div>
+
+           
+          <h2 class="section-heading">Flip a <em>card.</em></h2>
+
+           
+          <p class="hint">Tap the card to reveal your invitation detail.</p>
+
+           
+          <div
+            class="flip-scene"
+            id="flipScene"
+            role="button"
+            tabindex="0"
+            aria-label="Flip invitation card"
+            aria-pressed="false"
+          >
+               
+            <div class="flip-card">
+                 
+              <div class="flip-face flip-front">
+                <div class="suit-mark">♠</div>
+                <strong>S.</strong><small>Tap to reveal</small>
+              </div>
+
+                 
+              <div class="flip-face flip-back">
+                <div class="back-symbol">♥</div>
+                <strong>You're Invited</strong
+                ><span
+                  >Sony's Birthday<br />24 October 2026 · 18.30<br />Millennium
+                  Hotel Sirih Jakarta, Jakarta Utara</span
+                ><a href="#rsvp">Confirm your presence ↗</a>
+              </div>
+
+                 
+            </div>
+
+             
+          </div>
+
+           
+        </div>
+      </section>
+
+      <section class="details" id="details">
+        <div class="container details-grid">
+          <div class="detail-intro reveal">
+            <div class="tiny">Save the date</div>
+            <h2 class="section-heading">The<br /><em>details.</em></h2>
+            <p class="bodycopy">
+              Everything you need to know about the celebration.
+            </p>
+          </div>
+          <div class="details-card reveal">
+            <div class="detail-row">
+              <div class="detail-label">When</div>
+              <div class="detail-value">Saturday, 24 October 2026</div>
+            </div>
+            <div class="detail-row">
+              <div class="detail-label">Time</div>
+              <div class="detail-value">18.30 WIB</div>
+            </div>
+            <div class="detail-row">
+              <div class="detail-label">Where</div>
+              <div class="detail-value">Millennium Hotel Sirih Jakarta</div>
+              <div class="detail-sub">Jakarta Utara, DKI Jakarta</div>
+            </div>
+            <a
+              class="btn ghost map-link"
+              href="https://www.google.com/maps/search/?api=1&amp;query=Millennium%20Hotel%20Sirih%20Jakarta"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Open Google Maps <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="countdown">
+        <span
+          class="edge-token from-right"
+          data-suit="♦"
+          aria-hidden="true"
+        ></span>
+        <div class="container reveal">
+          <div class="tiny">Counting down the moments</div>
+          <h2 class="section-heading">Until we <em>celebrate.</em></h2>
+          <div
+            class="countdown-grid"
+            aria-label="Countdown to 24 October 2026 at 18:30 Jakarta time"
+          >
+            <div class="clock"><strong id="d">00</strong><span>Days</span></div>
+            <div class="clock">
+              <strong id="h">00</strong><span>Hours</span>
+            </div>
+            <div class="clock">
+              <strong id="m">00</strong><span>Minutes</span>
+            </div>
+            <div class="clock">
+              <strong id="s">00</strong><span>Seconds</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rsvp" id="rsvp">
+        <div class="container">
+          <div class="rsvp-panel reveal">
+            <div class="tiny">The pleasure of your company</div>
+            <h2 class="section-heading">Kindly <em>RSVP.</em></h2>
+            <p class="rsvp-desc">
+              We would love to know if you'll be joining us for Sony's Birthday.
+            </p>
+            <form class="rsvp-fields" id="rsvpForm">
+              <div class="field">
+                <label for="guestName">Your name</label
+                ><input
+                  id="guestName"
+                  name="guestName"
+                  placeholder="Full name"
+                  autocomplete="name"
+                  required
+                  maxlength="90"
+                />
+              </div>
+              <div class="field">
+                <label for="attendance">Attendance</label
+                ><select id="attendance" name="attendance" required>
+                  <option value="">Please select</option>
+                  <option value="yes">Joyfully accepts</option>
+                  <option value="no">Regretfully declines</option>
+                </select>
+              </div>
+              <button class="btn rsvp-submit" type="submit">
+                Confirm My RSVP <span aria-hidden="true">→</span>
+              </button>
+            </form>
+            <div class="rsvp-result" id="rsvpResult" role="status">
+              <p id="rsvpMessage"></p>
+            </div>
+            <p class="rsvp-note" id="rsvpStatus" role="status"></p>
+            <p class="rsvp-note">
+              Your RSVP will be saved securely after confirmation. Only the
+              organizer can view the guest list.
+            </p>
+            <a href="#home" class="invitation-ref">Refer to invitation ↑</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="admin-section" id="admin" hidden>
+      <div class="container">
+        <div class="tiny">Private access</div>
+        <h2 class="section-heading">Guest <em>list.</em></h2>
+
+        <div id="adminLogin">
+          <p class="bodycopy">
+            Organizer access only. Sign in with your Firebase admin account.
+          </p>
+
+          <form id="loginForm" class="rsvp-fields">
+            <div class="field">
+              <label for="adminEmail">Email</label
+              ><input
+                id="adminEmail"
+                type="email"
+                autocomplete="username"
+                required
+              />
+            </div>
+
+            <div class="field">
+              <label for="adminPassword">Password</label
+              ><input
+                id="adminPassword"
+                type="password"
+                autocomplete="current-password"
+                required
+              />
+            </div>
+
+            <button class="btn" type="submit">Sign in</button>
+          </form>
+        </div>
+
+        <div id="adminDashboard" hidden>
+          <div class="admin-actions">
+            <span id="guestSummary">Loading...</span
+            ><button class="btn ghost" id="exportCsv" type="button">
+              Export CSV</button
+            ><button class="btn ghost" id="logoutAdmin" type="button">
+              Sign out
+            </button>
+          </div>
+
+          <div class="admin-table-wrap">
+            <table class="admin-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Attendance</th>
+                  <th>Submitted</th>
+                </tr>
+              </thead>
+              <tbody id="guestRows"></tbody>
+            </table>
+          </div>
+        </div>
+        <p class="rsvp-note" id="adminStatus" role="status"></p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-logo">S.</div>
+      <p>24 October 2026 · Millennium Hotel Sirih Jakarta, Jakarta Utara</p>
+      <p>Made for a beautiful evening.</p>
+      <button type="button" id="adminAccess" class="admin-link">
+        Organizer login
+      </button>
+    </footer>
+
+    <!--*&#x20;Add your licensed audio file at assets/birthday.mp3&#x20;*-->
+
+    <audio
+      id="birthdayMusic"
+      src="assets/myway.mp3"
+      preload="none"
+      loop
+    ></audio>
+
+    <button
+      type="button"
+      id="musicToggle"
+      class="music-control"
+      aria-label="Play background music"
+      aria-pressed="false"
+      hidden
+    >
+      <span class="music-symbol" aria-hidden="true">♫</span
+      ><span id="musicLabel">Play music</span>
+    </button>
+
+    <script>
+      (() => {
+        const gate = document.getElementById("gate");
+        const open = document.getElementById("openInvite");
+        document.body.style.overflow = "hidden";
+        open.addEventListener(
+          "click",
+          () => {
+            window.startInvitationMusic?.();
+            gate.classList.add("hide");
+            document.body.style.overflow = "";
+            setTimeout(() => gate.remove(), 950);
+          },
+          { once: true },
+        );
+
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add("visible");
+                revealObserver.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.12 },
+        );
+        document
+          .querySelectorAll(".reveal")
+          .forEach((el) => revealObserver.observe(el));
+
+        const tokenObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add("in");
+                tokenObserver.unobserve(e.target);
+              }
+            });
+          },
+          { threshold: 0.12 },
+        );
+        document
+          .querySelectorAll(".edge-token")
+          .forEach((el) => tokenObserver.observe(el));
+
+        const flipScene = document.getElementById("flipScene");
+
+        const flip = () => {
+          flipScene.classList.toggle("flipped");
+          flipScene.setAttribute(
+            "aria-pressed",
+            String(flipScene.classList.contains("flipped")),
+          );
+        };
+
+        flipScene.addEventListener("click", (e) => {
+          if (e.target.closest("a")) return;
+          flip();
+        });
+
+        flipScene.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            flip();
+          }
+        });
+
+        const nav = document.getElementById("nav");
+        const onScroll = () =>
+          nav.classList.toggle("scrolled", window.scrollY > 36);
+        onScroll();
+        addEventListener("scroll", onScroll, { passive: true });
+
+        const navLinks = [...document.querySelectorAll(".nav-links a")];
+
+        const updateActive = () => {
+          const pos = window.scrollY + Math.min(window.innerHeight * 0.42, 300);
+          let active = "invitation";
+          for (const id of ["invitation", "details", "rsvp"]) {
+            const el = document.getElementById(id);
+            if (el && el.offsetTop <= pos) active = id;
+          }
+          navLinks.forEach((a) => {
+            const selected = a.getAttribute("href") === "#" + active;
+            a.classList.toggle("active", selected);
+            if (selected) a.setAttribute("aria-current", "location");
+            else a.removeAttribute("aria-current");
+          });
+        };
+
+        window.addEventListener("scroll", updateActive, { passive: true });
+        window.addEventListener("resize", updateActive);
+        updateActive();
+
+        const target = new Date("2026-10-24T18:30:00+07:00").getTime();
+        function tick() {
+          let t = Math.max(0, target - Date.now());
+          for (const [k, v] of Object.entries({
+            d: Math.floor(t / 864e5),
+            h: Math.floor(t / 36e5) % 24,
+            m: Math.floor(t / 6e4) % 60,
+            s: Math.floor(t / 1e3) % 60,
+          }))
+            document.getElementById(k).textContent = String(v).padStart(2, "0");
+        }
+        tick();
+        setInterval(tick, 1000);
+      })();
+    </script>
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
+
+      import {
+        getFirestore,
+        collection,
+        addDoc,
+        getDocs,
+        query,
+        orderBy,
+        serverTimestamp,
+      } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+
+      import {
+        getAuth,
+        signInWithEmailAndPassword,
+        signOut,
+        onAuthStateChanged,
+      } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+      import { firebaseConfig, ADMIN_UID } from "./firebase-config.js";
+
+      const status = document.getElementById("rsvpStatus");
+
+      const adminStatus = document.getElementById("adminStatus");
+
+      const form = document.getElementById("rsvpForm");
+
+      const submit = form.querySelector("button[type=submit]");
+
+      const ready =
+        Object.values(firebaseConfig).every(
+          (x) => typeof x === "string" && x.trim() && !x.includes("PASTE_"),
+        ) &&
+        ADMIN_UID &&
+        !ADMIN_UID.includes("PASTE_");
+
+      let db,
+        auth,
+        rows = [];
+
+      if (ready) {
+        const app = initializeApp(firebaseConfig);
+        db = getFirestore(app);
+        auth = getAuth(app);
+
+        onAuthStateChanged(auth, async (user) => {
+          const allowed = Boolean(user && user.uid === ADMIN_UID);
+
+          document.getElementById("adminLogin").hidden = allowed;
+
+          document.getElementById("adminDashboard").hidden = !allowed;
+
+          if (allowed) await loadGuests();
+          else if (user) {
+            adminStatus.textContent = "This account is not authorized.";
+            await signOut(auth);
+          }
+        });
+      } else {
+        status.textContent =
+          "Firebase belum dikonfigurasi. Isi firebase-config.js dahulu.";
+      }
+
+      form.addEventListener("submit", async (e) => {
+        e.preventDefault();
+
+        if (!ready) {
+          status.textContent = "Firebase belum dikonfigurasi.";
+          return;
+        }
+
+        const name = document.getElementById("guestName").value.trim();
+
+        const attendance = document.getElementById("attendance").value;
+
+        if (
+          name.length < 2 ||
+          name.length > 90 ||
+          !["yes", "no"].includes(attendance)
+        ) {
+          status.textContent = "Please enter a valid name and attendance.";
+          return;
+        }
+
+        submit.disabled = true;
+        submit.textContent = "Saving...";
+        status.textContent = "";
+
+        try {
+          await addDoc(collection(db, "rsvps"), {
+            name,
+            attendance,
+            createdAt: serverTimestamp(),
+          });
+
+          document.getElementById("rsvpMessage").textContent =
+            `Thank you, ${name}! Your RSVP has been received. ${attendance === "yes" ? "See you on 24 October!" : "We'll miss you!"}`;
+
+          document.getElementById("rsvpResult").classList.add("show");
+          form.reset();
+
+          status.textContent = "Your response was saved successfully.";
+        } catch (err) {
+          console.error(err);
+          status.textContent = "Could not save RSVP. Please try again.";
+        } finally {
+          submit.disabled = false;
+          submit.textContent = "Confirm My RSVP";
+        }
+      });
+
+      document.getElementById("adminAccess").addEventListener("click", () => {
+        const section = document.getElementById("admin");
+        section.hidden = false;
+
+        section.scrollIntoView({ behavior: "smooth" });
+      });
+
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          if (!ready) {
+            adminStatus.textContent = "Configure Firebase first.";
+            return;
+          }
+
+          adminStatus.textContent = "Signing in...";
+
+          try {
+            const cred = await signInWithEmailAndPassword(
+              auth,
+              document.getElementById("adminEmail").value,
+              document.getElementById("adminPassword").value,
+            );
+
+            if (cred.user.uid !== ADMIN_UID) {
+              await signOut(auth);
+              adminStatus.textContent = "Not an authorized organizer.";
+              return;
+            }
+
+            adminStatus.textContent = "";
+            document.getElementById("adminPassword").value = "";
+          } catch (err) {
+            console.error(err);
+            adminStatus.textContent = "Login failed. Check email and password.";
+          }
+        });
+
+      async function loadGuests() {
+        adminStatus.textContent = "Loading guest list...";
+
+        try {
+          const snap = await getDocs(
+            query(collection(db, "rsvps"), orderBy("createdAt", "desc")),
+          );
+
+          rows = snap.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+
+          const tbody = document.getElementById("guestRows");
+          tbody.replaceChildren();
+
+          for (const r of rows) {
+            const tr = document.createElement("tr");
+
+            const date =
+              r.createdAt
+                ?.toDate?.()
+                ?.toLocaleString("en-GB", { timeZone: "Asia/Jakarta" }) || "—";
+
+            for (const v of [
+              r.name,
+              r.attendance === "yes" ? "Attending" : "Declined",
+              date,
+            ]) {
+              const td = document.createElement("td");
+              td.textContent = String(v || "");
+              tr.appendChild(td);
+            }
+            tbody.appendChild(tr);
+          }
+
+          document.getElementById("guestSummary").textContent =
+            `${rows.length} responses · ${rows.filter((x) => x.attendance === "yes").length} attending · ${rows.filter((x) => x.attendance === "no").length} declined`;
+
+          adminStatus.textContent = "";
+        } catch (err) {
+          console.error(err);
+          adminStatus.textContent =
+            "Unable to load guests. Check Firestore rules and admin UID.";
+        }
+      }
+
+      document
+        .getElementById("logoutAdmin")
+        .addEventListener("click", () => signOut(auth));
+
+      document.getElementById("exportCsv").addEventListener("click", () => {
+        const esc = (v) => '"' + String(v ?? "").replaceAll('"', '""') + '"';
+
+        const csv = [
+          ["Name", "Attendance", "Submitted (Jakarta)"],
+          ...rows.map((r) => [
+            r.name,
+            r.attendance,
+            r.createdAt
+              ?.toDate?.()
+              ?.toLocaleString("en-GB", { timeZone: "Asia/Jakarta" }) || "",
+          ]),
+        ]
+          .map((row) => row.map(esc).join(","))
+          .join("\r\n");
+
+        const blob = new Blob(["\uFEFF" + csv], {
+          type: "text/csv;charset=utf-8",
+        });
+
+        const url = URL.createObjectURL(blob),
+          a = document.createElement("a");
+        a.href = url;
+        a.download = "sony-rsvp.csv";
+        a.click();
+        URL.revokeObjectURL(url);
+      });
+    </script>
+
+    <script>
+      (() => {
+        const audio = document.getElementById("birthdayMusic");
+
+        const toggle = document.getElementById("musicToggle");
+
+        const label = document.getElementById("musicLabel");
+
+        audio.volume = 0.3;
+
+        const update = () => {
+          const playing = !audio.paused;
+          toggle.classList.toggle("is-playing", playing);
+          toggle.setAttribute("aria-pressed", String(playing));
+          toggle.setAttribute(
+            "aria-label",
+            playing ? "Pause background music" : "Play background music",
+          );
+          label.textContent = playing ? "Pause music" : "Play music";
+        };
+
+        const tryPlay = () => {
+          toggle.hidden = false;
+          audio
+            .play()
+            .then(update)
+            .catch(() => {
+              update();
+              label.textContent = "Play music";
+            });
+        };
+
+        window.startInvitationMusic = tryPlay;
+
+        toggle.addEventListener("click", () => {
+          if (audio.paused) tryPlay();
+          else {
+            audio.pause();
+            update();
+          }
+        });
+
+        audio.addEventListener("play", update);
+        audio.addEventListener("pause", update);
+
+        audio.addEventListener("error", () => {
+          toggle.hidden = false;
+          label.textContent = "Add music file";
+          toggle.setAttribute("aria-label", "Music file not found");
+        });
+      })();
+    </script>
+  </body>
+</html>
